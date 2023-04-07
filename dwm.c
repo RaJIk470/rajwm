@@ -1206,10 +1206,10 @@ moveresize(const Arg *arg) {
 	unsigned int dui;
 	Window dummy;
 
-	if (!c || !arg)
-		return;
-	if (selmon->lt[selmon->sellt]->arrange && !c->isfloating)
-		return;
+  if (!(c && arg && arg->v))
+    return;
+  if (selmon->lt[selmon->sellt]->arrange && !c->isfloating)
+    togglefloating(NULL);
 	if (sscanf((char *)arg->v, "%d%c %d%c %d%c %d%c", &x, &xAbs, &y, &yAbs, &w, &wAbs, &h, &hAbs) != 8)
 		return;
 
