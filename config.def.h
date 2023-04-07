@@ -74,16 +74,27 @@ static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_s,      spawn,          SHCMD("screenshot") },
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("screenshotsel") },
+<<<<<<< HEAD
   { MODKEY, 			                XK_F1,     spawn,   	   {.v = mute_vol } },
   { MODKEY, 			                XK_F2, 	   spawn,          {.v = down_vol } },
   { MODKEY, 			                XK_F3, 	   spawn, 	   {.v = up_vol } },
+=======
+  { MODKEY, 			                XK_F1,     spawn,   	     {.v = mute_vol } },
+  { MODKEY, 			                XK_F2, 	   spawn,          {.v = down_vol } },
+  { MODKEY, 			                XK_F3, 	   spawn, 	       {.v = up_vol } },
+>>>>>>> config
 	{ MODKEY,	                      XK_F1,     spawn,          SHCMD("updatedwmbar") },
 	{ MODKEY,         	            XK_F2,     spawn,          SHCMD("updatedwmbar") },
 	{ MODKEY,             		      XK_F3,     spawn,          SHCMD("updatedwmbar") },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
+<<<<<<< HEAD
 	{ MODKEY, 			                XK_F4,     spawn, 	   {.v = dimmer } },
   { MODKEY, 			                XK_F5,     spawn, 	   {.v = brighter } },
+=======
+	{ MODKEY, 			                XK_F4,     spawn, 	       {.v = dimmer } },
+  { MODKEY, 			                XK_F5,     spawn, 	       {.v = brighter } },
+>>>>>>> config
 	{ MODKEY,                       XK_b,      togglebar,      {0} },
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
@@ -97,8 +108,8 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
-//{ MODKEY,                       XK_space,  setlayout,      {0} },
-//{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
+	{ MODKEY,                       XK_n,      setlayout,      {0} },
+	{ MODKEY|ShiftMask,             XK_n,      togglefloating, {0} },
 	{ MODKEY|ShiftMask,             XK_j,      moveresize,     {.v = "0x 50y 0w 0h" } },
 	{ MODKEY|ShiftMask,             XK_k,      moveresize,     {.v = "0x -50y 0w 0h" } },
 	{ MODKEY|ShiftMask,             XK_l,      moveresize,     {.v = "50x 0y 0w 0h" } },
