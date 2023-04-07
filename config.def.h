@@ -32,6 +32,7 @@ static const Rule rules[] = {
 	{ "Firefox", 	    NULL,     NULL,           1 << 8,    0,          0,          -1,        -1 },
 	{ "Alacritty",      NULL,     NULL,           0,         0,          1,           0,        -1 },
 	{ "st-256color",    NULL,     NULL,           0,         0,          1,           0,        -1 },
+  { "TelegramDesktop", NULL,    "Media viewer",  1 << 7,    1,        -1,           0,        -1 },
 };
 
 /* layout(s) */
