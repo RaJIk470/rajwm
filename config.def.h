@@ -68,6 +68,7 @@ static const char *dimmer[]   = { "brightnessctl", "set", "10%-", NULL };
 
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
+	{ MODKEY|ShiftMask,             XK_x,      spawn,          SHCMD("shd") },
 	{ MODKEY,                       XK_s,      spawn,          SHCMD("screenshot") },
 	{ MODKEY|ShiftMask,             XK_s,      spawn,          SHCMD("screenshotsel") },
   { MODKEY, 			                XK_F1,     spawn,   	     {.v = mute_vol } },
