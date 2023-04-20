@@ -77,6 +77,7 @@ static const Key keys[] = {
 	{ MODKEY,	                      XK_F1,     spawn,          SHCMD("updatedwmbar") },
 	{ MODKEY,         	            XK_F2,     spawn,          SHCMD("updatedwmbar") },
 	{ MODKEY,             		      XK_F3,     spawn,          SHCMD("updatedwmbar") },
+	{ MODKEY,	                      XK_space,  spawn,          SHCMD("updatedwmbar") },
 	{ MODKEY,                       XK_p,      spawn,          {.v = dmenucmd } },
 	{ MODKEY|ShiftMask,             XK_Return, spawn,          {.v = termcmd } },
 	{ MODKEY, 			                XK_F4,     spawn, 	       {.v = dimmer } },
